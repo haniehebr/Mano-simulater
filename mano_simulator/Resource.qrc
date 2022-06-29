@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>icons/29240_add_plus_new_icon.png</file>
+        <file>icons/79836_cancel_gtk_guardar_reset_save_icon.png</file>
+        <file>icons/multifloralwtrmrk.jpg</file>
+        <file>icons/285657_floppy_guardar_save_icon.png</file>
+        <file>icons/3298600_new_blank_document_folder_icon.png</file>
+        <file>icons/4567732_button_interface_multimedia_play_user_icon.png</file>
+        <file>icons/5355374_arrow_direction_down_forward_left_icon.png</file>
+        <file>icons/6569451_and_applications_code_compile_compiler_icon.png</file>
+        <file>icons/299053_computer_icon.png</file>
+    </qresource>
+</RCC>

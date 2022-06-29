@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1025</width>
+    <height>728</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1031</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/new/prefix1/icons/multifloralwtrmrk.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="editor">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>261</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="console">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>550</y>
+      <width>671</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>470</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="editor_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>0</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Zar Mazar</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Editor :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="input_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>430</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Zar Mazar</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Input :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="console_label">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>510</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Zar Mazar</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Console :</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Save_button">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>620</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/new/prefix1/icons/285657_floppy_guardar_save_icon.png</normaloff>:/new/prefix1/icons/285657_floppy_guardar_save_icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>55</width>
+      <height>55</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="open_button">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>620</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/new/prefix1/icons/3298600_new_blank_document_folder_icon.png</normaloff>:/new/prefix1/icons/3298600_new_blank_document_folder_icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="new_button">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>620</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/new/prefix1/icons/29240_add_plus_new_icon.png</normaloff>:/new/prefix1/icons/29240_add_plus_new_icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="compile_button">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>620</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/new/prefix1/icons/6569451_and_applications_code_compile_compiler_icon.png</normaloff>:/new/prefix1/icons/6569451_and_applications_code_compile_compiler_icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="run_button">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>620</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/new/prefix1/icons/4567732_button_interface_multimedia_play_user_icon.png</normaloff>:/new/prefix1/icons/4567732_button_interface_multimedia_play_user_icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>65</width>
+      <height>65</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next_button">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>620</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/new/prefix1/icons/5355374_arrow_direction_down_forward_left_icon.png</normaloff>:/new/prefix1/icons/5355374_arrow_direction_down_forward_left_icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset_button">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>620</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/new/prefix1/icons/79836_cancel_gtk_guardar_reset_save_icon.png</normaloff>:/new/prefix1/icons/79836_cancel_gtk_guardar_reset_save_icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>65</width>
+      <height>65</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="ram_tb">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>40</y>
+      <width>371</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Label</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>192</green>
+       <blue>222</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Address</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>204</red>
+       <green>197</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Instruction</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>172</red>
+       <green>223</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Hex</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>179</red>
+       <green>255</green>
+       <blue>184</blue>
+      </color>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="operation_label">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>430</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Zar Mazar</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Operation :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ram_label">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>0</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Zar Mazar</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>RAM :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="operation">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>470</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="tr_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="tr_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 178, 201);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>    TR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="tr">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>40</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="dr_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="dr_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 178, 201);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>    DR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="dr">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>40</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="ir_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="ir_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 178, 201);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>     IR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="ir">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>110</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="sc_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="sc_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(201, 194, 255);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>     SC</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="sc">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>110</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="ar_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="ar_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(201, 194, 255);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>    AR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="ar">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_6">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>110</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="inpr_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="inpr_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(201, 194, 255);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>  INPR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="inpr">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_7">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>180</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="outr_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="outr_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(193, 231, 255);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string> OUTR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="outr">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_8">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>180</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="ac_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="ac_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(193, 231, 255);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>    AC</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="ac">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_9">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>180</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="pc_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="pc_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(193, 231, 255);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>     PC</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="pc">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_10">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>250</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="i_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="i_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(188, 255, 199);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>      I</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="i">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_11">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>250</y>
+      <width>71</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="e_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="e_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(188, 255, 199);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>     E</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="e">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_12">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>250</y>
+      <width>71</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="s_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="s_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(188, 255, 199);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>     S</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="s">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_13">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>250</y>
+      <width>71</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="r_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="r_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(188, 255, 199);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>    R</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="r">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_14">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>320</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="fgo_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="fgo_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 250, 197);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>   FGO</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="fgo">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_15">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>321</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="fgi_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="fgi_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 250, 197);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>    FGI</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="fgi">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_16">
+    <property name="geometry">
+     <rect>
+      <x>525</x>
+      <y>320</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="ien_box">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="ien_label">
+       <property name="font">
+        <font>
+         <family>Zanbagh</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 250, 197);
+border-top-left-radius: 30%;
+border-top-right-radius: 30%;
+</string>
+       </property>
+       <property name="text">
+        <string>    IEN</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="ien">
+       <property name="styleSheet">
+        <string notr="true">border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="name_label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>570</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Zar Mazar</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Basic Computer</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>520</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Zar Mazar</family>
+      <pointsize>22</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>MANO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>630</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Zar Mazar</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Simulator</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1025</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuCompile_and_Run">
+    <property name="title">
+     <string>Compile and Run</string>
+    </property>
+    <addaction name="actionCompile_program"/>
+    <addaction name="separator"/>
+    <addaction name="actionRun_program"/>
+    <addaction name="separator"/>
+    <addaction name="actionNext_step"/>
+    <addaction name="separator"/>
+    <addaction name="actionReset_code"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_Mano_Simulator"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuCompile_and_Run"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save &amp;as</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>&amp;Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionCtrl_N">
+   <property name="text">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionAbout_Mano_Simulator">
+   <property name="text">
+    <string>About Mano Simulator</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionCompile_program">
+   <property name="text">
+    <string>Compile program</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="actionRun_program">
+   <property name="text">
+    <string>Run program</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionNext_step">
+   <property name="text">
+    <string>Next step</string>
+   </property>
+   <property name="shortcut">
+    <string>F9, F10</string>
+   </property>
+  </action>
+  <action name="actionReset_code">
+   <property name="text">
+    <string>Reset code</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
